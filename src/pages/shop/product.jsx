@@ -26,7 +26,7 @@ const Product = ({ data }) => {
       <button className='addToCartBttn' onClick={handleAddToCart}>
         Add To Cart ({cartItemAmount})
       </button>
-      <Link to={`/product/${id}`}>View Details</Link>
+      <Link to={`/product/${id}`}className="detailsLink">View Details</Link>
     </div>
   );
 };
