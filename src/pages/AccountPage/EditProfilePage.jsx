@@ -6,6 +6,7 @@ const EditProfilePage = () => {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [streetAddress, setStreetAddress] = useState('');
   const [city, setCity] = useState('');
   const [postalCode, setPostalCode] = useState('');
   const [country, setCountry] = useState('');
@@ -34,6 +35,10 @@ const EditProfilePage = () => {
         <div className="form-group">
           <label htmlFor="password">Password:</label>
           <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="streetAddress">Shipping Address:</label>
+          <input type="text" id="streetAddress" value={streetAddress} onChange={(e) => setStreetAddress(e.target.value)} required />
         </div>
         <div className="form-group">
           <label htmlFor="city">City:</label>

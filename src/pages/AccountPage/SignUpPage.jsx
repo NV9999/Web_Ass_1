@@ -41,7 +41,7 @@ const SignUpPage = () => {
           <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         </div>
         <div className="form-group">
-          <label htmlFor="streetAddress">Street Address:</label>
+          <label htmlFor="streetAddress">Shipping Address:</label>
           <input type="text" id="streetAddress" value={streetAddress} onChange={(e) => setStreetAddress(e.target.value)} required />
         </div>
         <div className="form-group">
