@@ -8,6 +8,7 @@ import ProductDetail from "./pages/product-detail/ProductDetail";
 import AccountPage from "./pages/AccountPage/AccountPage"; 
 import SignUpPage from "./pages/AccountPage/SignUpPage";
 import CheckoutPage from './pages/shop/CheckoutPage';
+import EditProfilePage from './pages/AccountPage/EditProfilePage';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/account" element={<AccountPage />} />
             <Route path="/signup" element={<SignUpPage/>} />
-            <Route path="/checkout" component={CheckoutPage} />
+            <Route path="/checkout" element={<CheckoutPage/>} />
+            <Route exact path="/edit-profile" element={<EditProfilePage/>} />
           </Routes>
         </Router>
       </ShopContextProvider>
